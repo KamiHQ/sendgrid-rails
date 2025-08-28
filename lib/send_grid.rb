@@ -1,4 +1,4 @@
-module SendGrid
+module SendGridRails
   autoload :ApiHeader, 'send_grid/api_header'
   autoload :MailInterceptor, 'send_grid/mail_interceptor'
   autoload :VERSION, 'send_grid/version'
@@ -15,7 +15,7 @@ module SendGrid
 
   module InstanceMethods
     def send_grid_header
-      @send_grid_header ||= SendGrid::ApiHeader.new
+      @send_grid_header ||= SendGridRails::ApiHeader.new
     end
 
     def mail(headers={}, &block)
@@ -33,7 +33,7 @@ module SendGrid
     attr_writer :config
 
     def config
-      @config ||= SendGrid::Config.new
+      @config ||= SendGridRails::Config.new
     end
 
     # Sendgrid.config will be default if block is not passed

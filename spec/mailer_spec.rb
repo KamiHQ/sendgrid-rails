@@ -54,7 +54,7 @@ describe Mailer do
     it 'should be used in To defined in config dummy_recipient' do
       # dummy_recipient can be redefined config/initializers
 
-      SendGrid.configure do |config|
+      SendGridRails.configure do |config|
         config.dummy_recipient = 'noreply@example.com'
       end
 

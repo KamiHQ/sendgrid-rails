@@ -1,4 +1,4 @@
-module SendGrid
+module SendGridRails
   class MailInterceptor
     def self.delivering_email(mail)
       sendgrid_header = mail.instance_variable_get(:@sendgrid_header)

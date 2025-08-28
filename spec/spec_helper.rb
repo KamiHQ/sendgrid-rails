@@ -1,6 +1,6 @@
 require 'sendgrid-rails'
 
-ActionMailer::Base.register_interceptor(SendGrid::MailInterceptor)
+ActionMailer::Base.register_interceptor(SendGridRails::MailInterceptor)
 ActionMailer::Base.delivery_method = :test
 ActionMailer::Base.prepend_view_path File.join(File.dirname(__FILE__), "fixtures", "views")
 

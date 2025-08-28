@@ -1,4 +1,3 @@
-module SendGrid
-  VERSION = "3.1.0"
+module SendGridRails
+  VERSION = '3.1.0'
 end
-

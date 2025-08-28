@@ -1,7 +1,7 @@
 require 'spec_helper'
 
-describe SendGrid::ApiHeader do
-  let(:header) { SendGrid::ApiHeader.new }
+describe SendGridRails::ApiHeader do
+  let(:header) { SendGridRails::ApiHeader.new }
   describe "#to_json" do
     it "returns valid json if no data was set" do
       header.to_json.should eql "{}"
