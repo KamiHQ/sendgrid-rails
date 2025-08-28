@@ -1,4 +1,4 @@
-class SendGrid::Config
+class SendGridRails::Config
   attr_accessor :dummy_recipient
 
   def initialize

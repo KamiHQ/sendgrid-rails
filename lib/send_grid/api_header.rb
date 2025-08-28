@@ -1,4 +1,4 @@
-class SendGrid::ApiHeader
+class SendGridRails::ApiHeader
   attr_reader :data
 
   def initialize

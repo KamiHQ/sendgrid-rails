@@ -4,7 +4,7 @@ require "send_grid/version"
 
 Gem::Specification.new do |s|
   s.name        = "sendgrid-rails"
-  s.version     = SendGrid::VERSION
+  s.version     = SendGridRails::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["PavelTyk"]
   s.email       = ["paveltyk@gmail.com"]
